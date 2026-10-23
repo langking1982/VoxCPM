@@ -1,3 +1,9 @@
+> [!NOTE]
+> **衍生声明**：本仓库是 [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) 的社区衍生升级版，
+> **鸣谢原作者 [OpenBMB](https://github.com/OpenBMB)** 的开源贡献。衍生改动见 [UPGRADES.md](UPGRADES.md)，
+> 完整出处与许可链见 [NOTICE.md](NOTICE.md)。
+> 许可构成不变：**Apache-2.0**（保留 LICENSE/NOTICE 与版权声明即可自由使用、修改、分发，**含商业用途**）。
+
 <h2 align="center">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning</h2>
 
 <p align="center">

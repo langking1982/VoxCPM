@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both this derivative and the original VoxCPM by OpenBMB."
+title: "VoxCPM (derivative): Tokenizer-Free TTS"
+authors:
+  - alias: "langking1982"
+    website: "https://github.com/langking1982"
+type: software
+repository-code: "https://github.com/langking1982/VoxCPM"
+abstract: >-
+  Tokenizer-free TTS for multilingual speech generation, creative voice design
+  and true-to-life cloning (derivative of OpenBMB/VoxCPM). Apache-2.0 licensed,
+  suitable for commercial use with attribution.
+keywords:
+  - "TTS"
+  - "text-to-speech"
+  - "voice cloning"
+  - "multilingual"
+  - "Python"
+license: Apache-2.0
+date-released: "2026-10-23"
+preferred-citation:
+  type: software
+  title: "VoxCPM: Tokenizer-Free TTS"
+  authors:
+    - name: OpenBMB
+  repository-code: "https://github.com/OpenBMB/VoxCPM"
+  year: 2025
