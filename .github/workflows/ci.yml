@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Smoke checks
+        run: |
+          test -f LICENSE || { echo "LICENSE missing"; exit 1; }
+          test -f NOTICE.md || { echo "NOTICE.md missing"; exit 1; }
+          grep -q "OpenBMB/VoxCPM" NOTICE.md || { echo "attribution missing"; exit 1; }
+          echo "sanity OK"
